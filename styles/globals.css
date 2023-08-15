@@ -1,23 +1,36 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
+* {
   box-sizing: border-box;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  color: #F7F7F7;
+  margin: 0;
+  padding: 0;
 }
 
-p {
-  margin: 0;
-  padding: 0;
+html,
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+main {
+  overflow: hidden;
+}
+
+main > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main > section:nth-child(even) {
+  color: #F7F7F7;
+  background-color: #100C0C;
+}
+
+main > section:nth-child(odd):not(:first-child) {
+  color: #100C0C;
+  background-color: #F7F7F7;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
-
-* {
-  box-sizing: border-box;
-}
-
