@@ -51,3 +51,15 @@
   text-decoration: underline;
   font-weight: bold;
 }
+
+
+.footer__text, .footer__text-warn {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.footer__text-warn {
+  text-decoration: underline;
+}
