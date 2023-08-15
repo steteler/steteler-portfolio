@@ -1,17 +1,20 @@
-.all {
-  overflow: hidden;
+.section-default-config {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
 }
 
 .home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  color: #F7F7F7;
   background-image: url("~/public/home-bg.svg");
   background-size: cover;
   background-position: center;
-  padding: 0 2rem;
-  position: relative;
+}
+
+.home__content {
+  justify-content: center;
 }
 
 .home__info {
