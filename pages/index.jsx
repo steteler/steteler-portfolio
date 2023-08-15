@@ -87,8 +87,9 @@ export default function Home() {
 
       <section className={styles.footer}>
         <div className={`${styles.footer__content} ${styles['section-default-config']}`}>
-          <Title text="footer" />
-          <h3>⚠️ Em desenvolvimento ⚠️</h3>
+          <p className={styles.footer__text}>Feito com muito ☕ por João Victor Steteler</p>
+          <p className={styles['footer__text-warn']}>código, design, referências e documentação do site no meu github oficial</p>
+          <ContactContainer />
         </div>
       </section>
     </main>
