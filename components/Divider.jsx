@@ -2,7 +2,7 @@ import styles from '@styles/Divider.module.css';
 
 export default function Divider({ color }) {
   return (
-    <svg className={styles.component__divider} width="1420" height="45" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className={styles.component__divider} width="1420" height="45" xmlns="http://www.w3.org/2000/svg">
       <path d="M60 0L111.962 45H8.03848L60 0Z" fill={color} />
       <path d="M160 0L211.962 45H108.038L160 0Z" fill={color} />
       <path d="M260 0L311.962 45H208.038L260 0Z" fill={color} />

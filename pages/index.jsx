@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import ContactContainer from '@components/Contact/ContactContainer.jsx';
+import Title from '@components/Title.jsx';
 import Divider from '@components/Divider.jsx';
 import styles from '@styles/Home.module.css';
 
@@ -40,15 +41,29 @@ export default function Home() {
 
       <section className={styles.about} id="about">
         <div className={`${styles.about__content} ${styles['section-default-config']}`}>
-          <h1>SOBRE</h1>
-          <h3>⚠️ Em desenvolvimento ⚠️</h3>
+          <Title text="sobre" />
+          <p>
+            Eu sou o João Victor Steteler, nasci em uma cidade pequena
+            mas sempre tive um grande sonho de me destacar na área da tecnologia.
+            Desde pequeno eu gostava de programação, comecei aprendendo java quando
+            criança para desenvolver modificações para um jogo chamado minecraft,
+            quando cresci eu fui para outras linguagens como C, C++, C# até chegar
+            na linguagem javascript que é a linguagem que mais gostei, com ela
+            desenvolvi vários projetos tanto da unifeb (faculdade) quanto da
+            trybe (curso de tecnologia). Inspirado por figuras cientificas como
+            Alberto Santos Dumont, Nikola Tesla e outros eu decidi aprofundar meus
+            conhecimentos em mais tecnologias e outras habilidades como design, soft skills
+            em geral por não estar satisfeito somente em aprender hardskills. Nas horas vagas
+            eu estudo, dou aulas de programação e por ser fullstack sou conhecido
+            também como o “faz tudo” haha 😁.
+          </p>
         </div>
         <Divider color={colors.white} />
       </section>
 
       <section className={styles.project}>
         <div className={`${styles.project__content} ${styles['section-default-config']}`}>
-          <h1>PROJETOS</h1>
+          <Title text="projetos" />
           <h3>⚠️ Em desenvolvimento ⚠️</h3>
         </div>
         <Divider color={colors.black} />
@@ -56,7 +71,7 @@ export default function Home() {
 
       <section className={styles.skill}>
         <div className={`${styles.skill__content} ${styles['section-default-config']}`}>
-          <h1>HABILIDADES</h1>
+          <Title text="habilidades" />
           <h3>⚠️ Em desenvolvimento ⚠️</h3>
         </div>
         <Divider color={colors.white} />
@@ -64,7 +79,7 @@ export default function Home() {
 
       <section className={styles.experience}>
         <div className={`${styles.experience__content} ${styles['section-default-config']}`}>
-          <h1>EXPERIÊNCIAS</h1>
+          <Title text="experiências" />
           <h3>⚠️ Em desenvolvimento ⚠️</h3>
         </div>
         <Divider color={colors.black} />
@@ -72,7 +87,7 @@ export default function Home() {
 
       <section className={styles.footer}>
         <div className={`${styles.footer__content} ${styles['section-default-config']}`}>
-          <h1>FOOTER</h1>
+          <Title text="footer" />
           <h3>⚠️ Em desenvolvimento ⚠️</h3>
         </div>
       </section>

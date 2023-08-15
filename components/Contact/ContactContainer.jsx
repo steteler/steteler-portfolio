@@ -8,10 +8,10 @@ import ContactItem from './ContactItem';
 export default function ContactContainer() {
   return (
     <section className={styles.component__contact}>
-      <ContactItem link="#" src={wppIcon.src} alt="Número whatsapp para contato" width="36" height="36" />
-      <ContactItem link="#" src={emailIcon.src} alt="Email para contato" width="36" height="36" />
-      <ContactItem link="#" src={linkedinIcon.src} alt="Linkedin para contato" width="36" height="36" />
-      <ContactItem link="#" src={githubIcon.src} alt="Github para contato" width="36" height="36" />
+      <ContactItem link="#" src={wppIcon.src} alt="Número whatsapp para contato" />
+      <ContactItem link="#" src={emailIcon.src} alt="Email para contato" />
+      <ContactItem link="#" src={linkedinIcon.src} alt="Linkedin para contato" />
+      <ContactItem link="#" src={githubIcon.src} alt="Github para contato" />
     </section>
   );
 }
