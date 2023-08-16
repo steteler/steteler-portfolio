@@ -45,6 +45,7 @@
 
 .home__know-more {
   font-weight: bold;
+  font-size: 12px;
 }
 
 .home__know-more-text {
@@ -52,12 +53,15 @@
   font-weight: bold;
 }
 
-
 .footer__text, .footer__text-warn {
   font-family: Inter, Arial, Helvetica, sans-serif;
   text-align: center;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.footer__text {
+  font-weight: 400;
 }
 
 .footer__text-warn {

@@ -1,3 +1,5 @@
-.component__divider {
+.divider {
     margin: -1px 0;
+    width: 1420px;
+    height: 45px;
 }
