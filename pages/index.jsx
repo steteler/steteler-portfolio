@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import SkillContainer from '@components/Skill/SkillContainer.jsx';
 import ContactContainer from '@components/Contact/ContactContainer.jsx';
 import Title from '@components/Title.jsx';
 import Divider from '@components/Divider.jsx';
@@ -9,6 +10,41 @@ export default function Home() {
     white: '#F7F7F7',
     black: '#100C0C',
   };
+
+  const languages = [
+    { technology: 'javascript es6', link: '#' },
+    { technology: 'typescript', link: '#' },
+    { technology: 'python', link: '#' },
+    { technology: 'java', link: '#' },
+    { technology: 'c#', link: '#' },
+    { technology: 'c++', link: '#' },
+  ];
+
+  const databases = [
+    { technology: 'sql / nosql', link: '#' },
+    { technology: 'mysql', link: '#' },
+    { technology: 'mongodb', link: '#' },
+  ];
+
+  const frameworks = [
+    { technology: 'node.js', link: '#' },
+    { technology: 'react.js', link: '#' },
+    { technology: 'next.js', link: '#' },
+    { technology: 'express', link: '#' },
+    { technology: 'apis restful', link: '#' },
+    { technology: 'redux', link: '#' },
+    { technology: 'jwt', link: '#' },
+    { technology: 'jest', link: '#' },
+    { technology: 'rtl', link: '#' },
+    { technology: 'pytest', link: '#' },
+  ];
+
+  const tools = [
+    { technology: 'figma', link: '#' },
+    { technology: 'trello', link: '#' },
+    { technology: 'docker', link: '#' },
+    { technology: 'docker compose', link: '#' },
+  ];
 
   return (
     <main>
@@ -72,7 +108,10 @@ export default function Home() {
       <section className={styles.skill}>
         <div className={`${styles.skill__content} ${styles['section-default-config']}`}>
           <Title text="habilidades" />
-          <h3>⚠️ Em desenvolvimento ⚠️</h3>
+          <SkillContainer technologies={languages} title="linguagens" />
+          <SkillContainer technologies={databases} title="banco de dados" />
+          <SkillContainer technologies={frameworks} title="frameworks" />
+          <SkillContainer technologies={tools} title="ferramentas" />
         </div>
         <Divider color={colors.white} />
       </section>
