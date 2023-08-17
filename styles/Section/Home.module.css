@@ -10,7 +10,7 @@
 
 .home {
   color: #F7F7F7;
-  background-image: url("/home-bg.svg");
+  background-image: url("~/public/home-bg.svg");
   background-size: cover;
   background-position: center;
 }
