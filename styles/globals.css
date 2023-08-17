@@ -1,3 +1,8 @@
+:root {
+  --color-primary: #100C0C;
+  --color-secondary: #F7F7F7;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,14 +24,22 @@ main > section {
   align-items: center;
 }
 
+main > section:nth-of-type(odd) svg > path {
+  fill: var(--color-primary);
+}
+
+main > section:nth-of-type(even) svg > path {
+  fill: var(--color-secondary);
+}
+
 main > section:nth-child(even) {
-  color: #F7F7F7;
-  background-color: #100C0C;
+  color: var(--color-secondary);
+  background-color: var(--color-primary)
 }
 
 main > section:nth-child(odd):not(:first-child) {
-  color: #100C0C;
-  background-color: #F7F7F7;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
 }
 
 a {
