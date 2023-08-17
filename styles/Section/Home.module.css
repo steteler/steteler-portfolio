@@ -10,13 +10,9 @@
 
 .home {
   color: #F7F7F7;
-  background-image: url("~/public/home-bg.svg");
+  background-image: url("/home-bg.svg");
   background-size: cover;
   background-position: center;
-}
-
-.home__content {
-  justify-content: center;
 }
 
 .home__info {
@@ -27,7 +23,7 @@
 
 .home__name {
   font-family: Raleway, Arial, Helvetica, sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 100%; 
 }
 
@@ -39,31 +35,19 @@
 }
 
 .home__summary {
-  font-size: 20px;
-  font-style: italic;
+  font-size: 14px;
+  color: #d3d3d3;
+  margin: 0 0 0.5rem;
 }
 
 .home__know-more {
-  font-weight: bold;
+  color: #d3d3d3;
   font-size: 12px;
+  font-family: sans-serif;
 }
 
 .home__know-more-text {
+  color: inherit;
   text-decoration: underline;
   font-weight: bold;
-}
-
-.footer__text, .footer__text-warn {
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  text-align: center;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.footer__text {
-  font-weight: 400;
-}
-
-.footer__text-warn {
-  text-decoration: underline;
 }

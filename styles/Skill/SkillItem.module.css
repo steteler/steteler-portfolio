@@ -1,0 +1,38 @@
+.skill__item {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.skill__progress-bar {
+  width: 140px;
+  height: 4px;
+  background-color: gray;
+}
+  
+.skill__progress {
+  width: 80%;
+  height: inherit;
+  background-color: #7F72F5;
+}
+
+.skill__text, .skill__link {
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: normal;
+}
+
+.skill__text {
+  font-family: Raleway,Arial, Helvetica, sans-serif;
+  color: #F7F7F7;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.skill__link {
+  color: #7F72F5;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}

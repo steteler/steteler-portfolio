@@ -1,0 +1,16 @@
+.skill-container {
+  margin: 1rem 0;
+}
+
+.skill-container__title {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 0 0 1rem;
+}
+
+.skill {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 1.5rem;
+}

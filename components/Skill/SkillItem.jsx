@@ -1,4 +1,4 @@
-import styles from '@styles/Skill.module.css';
+import styles from '@styles/Skill/SkillItem.module.css';
 
 export default function SkillItem({ technology = 'javascript', link = '#' }) {
   return (
