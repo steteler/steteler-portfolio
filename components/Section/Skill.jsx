@@ -39,12 +39,15 @@ export default function Skill() {
     { technology: 'docker compose', link: '#' },
   ];
   return (
-    <section className={styles.skill}>
+    <section className={styles.skill} id="skill">
       <div className={styles['section-default-config']}>
         <Title text="habilidades" />
         <TechnologyContainer technologies={languages} title="linguagens" />
+        <hr style={{ width: '80%' }} />
         <TechnologyContainer technologies={databases} title="banco de dados" />
+        <hr style={{ width: '80%' }} />
         <TechnologyContainer technologies={frameworks} title="frameworks" />
+        <hr style={{ width: '80%' }} />
         <TechnologyContainer technologies={tools} title="ferramentas" />
       </div>
       <Divider />
