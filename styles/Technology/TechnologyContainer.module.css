@@ -1,14 +1,14 @@
-.skill-container {
+.technology-container {
   margin: 1rem 0;
 }
 
-.skill-container__title {
+.technology-container__title {
   text-align: center;
   text-transform: capitalize;
   margin: 0 0 1rem;
 }
 
-.skill {
+.technology {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
