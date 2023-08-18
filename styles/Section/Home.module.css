@@ -4,8 +4,11 @@
   align-items: center;
   min-height: 100vh;
   padding: 2rem;
-  gap: 2rem;
   justify-content: center;
+}
+
+.section-default-config > *:not(:last-child) {
+  margin-bottom: 2rem;
 }
 
 .home {
@@ -16,6 +19,7 @@
 }
 
 .home__info {
+  text-align: left;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -24,7 +28,7 @@
 .home__name {
   font-family: Raleway, Arial, Helvetica, sans-serif;
   font-size: 20px;
-  line-height: 100%; 
+  line-height: 100%;
 }
 
 .home__role {
