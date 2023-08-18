@@ -1,6 +1,6 @@
 import Divider from '@components/Divider.jsx';
 import Title from '@components/Title.jsx';
-import SkillContainer from '@components/Skill/SkillContainer.jsx';
+import TechnologyContainer from '@components/Technology/TechnologyContainer.jsx';
 import styles from '@styles/Section/Skill.module.css';
 
 export default function Skill() {
@@ -42,10 +42,10 @@ export default function Skill() {
     <section className={styles.skill}>
       <div className={styles['section-default-config']}>
         <Title text="habilidades" />
-        <SkillContainer technologies={languages} title="linguagens" />
-        <SkillContainer technologies={databases} title="banco de dados" />
-        <SkillContainer technologies={frameworks} title="frameworks" />
-        <SkillContainer technologies={tools} title="ferramentas" />
+        <TechnologyContainer technologies={languages} title="linguagens" />
+        <TechnologyContainer technologies={databases} title="banco de dados" />
+        <TechnologyContainer technologies={frameworks} title="frameworks" />
+        <TechnologyContainer technologies={tools} title="ferramentas" />
       </div>
       <Divider />
     </section>
