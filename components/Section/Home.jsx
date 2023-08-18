@@ -5,7 +5,7 @@ import styles from '@styles/Section/Home.module.css';
 
 export default function Home() {
   return (
-    <section className={styles.home}>
+    <section className={styles.home} id="home">
       <div className={styles['section-default-config']}>
         <section className={styles.home__info}>
           <div className={styles['home__name-role']}>

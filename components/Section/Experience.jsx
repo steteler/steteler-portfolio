@@ -5,7 +5,7 @@ import styles from '@styles/Section/Experience.module.css';
 
 export default function Experience() {
   return (
-    <section>
+    <section id="experience">
       <div className={styles['section-default-config']}>
         <div className={styles.experience}>
           <Title text="experiência" />
