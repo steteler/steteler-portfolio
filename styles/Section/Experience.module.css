@@ -1,9 +1,34 @@
+.experience > *:not(:last-child, h1) {
+  margin-bottom: 1rem;
+}
+
 .section-default-config {
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  padding: 2rem;
-  gap: 2rem;
+  margin: 2rem;
   justify-content: center;
+}
+
+.section-default-config > *:not(:last-of-type) {
+  margin-bottom: 4rem;
+}
+
+.experience__list {
+  list-style: inside;
+}
+
+.experience__link {
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.experience__list-link {
+  list-style: none;
+  text-decoration: underline;
+}
+
+.experience__list-link > li:not(:last-child){
+  margin-bottom: 0.4rem;
 }

@@ -3,9 +3,12 @@
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  padding: 2rem;
-  gap: 2rem;
+  margin: 2rem;
   justify-content: center;
+}
+
+.section-default-config > *:not(:last-child) {
+  margin-bottom: 2rem;
 }
 
 .footer__text, .footer__text-warn {
@@ -14,11 +17,11 @@
   font-weight: 600;
   text-transform: uppercase;
 }
-  
+
 .footer__text {
   font-weight: 400;
 }
-  
+
 .footer__text-warn {
   text-decoration: underline;
 }
