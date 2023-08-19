@@ -1,4 +1,3 @@
-.contact {
-  display: flex;
-  gap: 0.5rem;
+.page-contact > a:not(:last-child){
+  margin-right: 0.4rem;
 }
