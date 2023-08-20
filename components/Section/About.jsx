@@ -1,8 +1,9 @@
 import Title from '@components/Title.jsx';
+import styles from '@styles/Section/About.module.css';
 
 export default function About() {
   return (
-    <section id="about">
+    <section id={styles.about}>
       <Title text="sobre" />
       <p>
         Eu sou o João Victor Steteler, nasci em uma cidade pequena
