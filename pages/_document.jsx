@@ -12,6 +12,7 @@ export default function Document() {
         <meta charSet="UTF-8" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter&family=Raleway&display=swap" rel="stylesheet" />
       </Head>
       <body>
