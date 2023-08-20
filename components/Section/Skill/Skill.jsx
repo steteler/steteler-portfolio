@@ -1,5 +1,6 @@
 import Title from '@components/Title.jsx';
 import TechnologyContainer from '@components/Section/Skill/Technology/TechnologyContainer.jsx';
+import styles from '@styles/Section/Skill/Skill.module.css';
 
 export default function Skill() {
   const languages = [
@@ -37,7 +38,7 @@ export default function Skill() {
     { technology: 'docker compose', link: '#', percentage: '80%' },
   ];
   return (
-    <section id="skill">
+    <section id={styles.skill}>
       <Title text="habilidades" />
       <TechnologyContainer
         technologies={languages}

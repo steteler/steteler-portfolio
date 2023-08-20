@@ -6,7 +6,7 @@ import projectTemplate from '@public/project-template.png';
 
 export default function Project() {
   return (
-    <section id="project">
+    <section id={styles.project}>
       <Title text="projetos" />
       <details className={styles['project__filter-container']}>
         <summary

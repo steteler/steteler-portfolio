@@ -14,7 +14,6 @@ export default function ContactItem({
         quality={100}
         width={36}
         height={36}
-        priority
       />
     </Link>
   );
