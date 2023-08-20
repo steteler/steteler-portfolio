@@ -1,4 +1,4 @@
-import styles from '@styles/Technology/TechnologyContainer.module.css';
+import styles from '@styles/Section/Skill/Technology/TechnologyContainer.module.css';
 import TechnologyItem from './TechnologyItem';
 
 export default function TechnologyContainer({ technologies, title = 'technology title' }) {
