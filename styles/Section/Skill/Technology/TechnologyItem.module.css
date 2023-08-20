@@ -1,0 +1,35 @@
+.technology-container__item {
+  list-style: none;
+}
+
+.technology-container__item > *:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.technology-container__text, .technology-container__link {
+  text-transform: uppercase;
+}
+
+.technology-container__text {
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.technology-container__progress-bar {
+  width: 140px;
+  height: 4px;
+  background-color: var(--color-gray);
+}
+
+.technology-container__progress {
+  width: 80%;
+  height: inherit;
+  background-color: var(--color-green);
+}
+
+.technology-container__link {
+  color: var(--color-green);
+  font-size: 12px;
+  font-weight: 700;
+}
