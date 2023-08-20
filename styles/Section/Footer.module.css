@@ -1,20 +1,9 @@
-.section-default-config {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  margin: 2rem;
-  justify-content: center;
-}
-
-.section-default-config > *:not(:last-child) {
-  margin-bottom: 2rem;
+#footer {
+  margin: 0 2rem;
 }
 
 .footer__text, .footer__text-warn {
-  font-family: Inter, Arial, Helvetica, sans-serif;
   text-align: center;
-  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -23,5 +12,6 @@
 }
 
 .footer__text-warn {
+  font-weight: 600;
   text-decoration: underline;
 }
