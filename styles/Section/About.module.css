@@ -1,0 +1,11 @@
+@media (768px <= width <= 1023px) {
+  #about {
+    width: 80%;
+  }
+}
+
+@media (1023px <= width) {
+  #about {
+    width: 60%;
+  }
+}

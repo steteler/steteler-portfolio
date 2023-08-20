@@ -52,7 +52,7 @@ a {
   align-items: center;
   min-height: 100vh;
   gap: 2rem;
-  margin: 2rem 1rem;
+  margin: 2rem;
 }
 
 .section-container:nth-child(even) {

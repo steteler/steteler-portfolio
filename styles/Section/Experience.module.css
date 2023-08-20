@@ -17,3 +17,15 @@
 .experience-content__list-link > li:not(:last-child){
   margin-bottom: 0.4rem;
 }
+
+@media (768px <= width <= 1023px) {
+  #experience {
+    width: 90%;
+  }
+}
+
+@media (1023px <= width) {
+  #experience {
+    width: 80%;
+  }
+}
