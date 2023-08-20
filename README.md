@@ -1,5 +1,6 @@
 ⚠️ Portfolio em Desenvolvimento ⚠️
 
 - [x] - 100% - Versão Mobile ✅
-- [ ] - 80% - Versão Tablet
-- [ ] - 60% - Versão Desktop
+- [x] - 100% - Versão Tablet
+- [x] - 100% - Versão Desktop
+- [ ] - 80% - Adicionar os conteúdos
