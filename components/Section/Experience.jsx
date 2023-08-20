@@ -1,14 +1,13 @@
 import Link from 'next/link';
-import Divider from '@components/Divider.jsx';
 import Title from '@components/Title.jsx';
 import styles from '@styles/Section/Experience.module.css';
 
 export default function Experience() {
   return (
-    <section id="experience">
-      <div className={styles['section-default-config']}>
-        <div className={styles.experience}>
-          <Title text="experiência" />
+    <section id={styles.experience}>
+      <div className={styles['experience-content']}>
+        <Title text="experiência" />
+        <div className={styles['experience-content__container']}>
           <h3>
             Autônomo
             <br />
@@ -29,12 +28,13 @@ export default function Experience() {
             empresa, só entrego os projetos que eles propõem e cumpro
             os prazos direitinho, mas não sou associado da empresa.
           </p>
-
-          <Link href="#project" className={styles.experience__link}>projetos públicos ➜</Link>
+          <Link href="#project" className={styles['experience-content__link']}>projetos públicos ➜</Link>
         </div>
-        <div className={styles.experience}>
-          <Title text="educação" />
-          <h3 className={styles.experience__title}>
+      </div>
+      <div className={styles['experience-content']}>
+        <Title text="educação" />
+        <div className={styles['experience-content__container']}>
+          <h3 className={styles['experience-content__title']}>
             Trybe
             <br />
             (Maio, 2022 ~ Maio, 2023)
@@ -46,7 +46,7 @@ export default function Experience() {
             para atuar como profissionais completos na área de tecnologia. Os
             temas abordados incluem:
           </p>
-          <ul className={styles.experience__list}>
+          <ul className={styles['experience-content__list']}>
             <li>Introdução ao desenvolvimento de software</li>
             <li>Front-end</li>
             <li>Back-end</li>
@@ -56,7 +56,7 @@ export default function Experience() {
             <li>Habilidades comportamentais</li>
           </ul>
 
-          <ul className={styles['experience__list-link']}>
+          <ul className={styles['experience-content__list-link']}>
             <li>
               <Link target="_blank" href="https://www.credential.net/c09f631b-82a0-4938-96ba-4f933e4a1fbd#gs.3zn2sa">FULLSTACK CERTIFICADO ➜</Link>
             </li>
@@ -74,8 +74,8 @@ export default function Experience() {
             </li>
           </ul>
         </div>
-        <div className={styles.experience}>
-          <h3 className={styles.experience__title}>
+        <div className={styles['experience-content__container']}>
+          <h3 className={styles['experience-content__title']}>
             Unifeb
             <br />
             (Janeiro, 2019 ~ Janeiro, 2022)
@@ -95,7 +95,7 @@ export default function Experience() {
             como foco capacitar os alunos na área de tecnologia da informação,
             abordando temas como:
           </p>
-          <ul className={styles.experience__list}>
+          <ul className={styles['experience-content__list']}>
             <li>Programação</li>
             <li>Redes de computadores</li>
             <li>Desenvolvimento de software</li>
@@ -112,7 +112,6 @@ export default function Experience() {
           </ul>
         </div>
       </div>
-      <Divider />
     </section>
   );
 }

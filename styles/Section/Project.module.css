@@ -1,38 +1,49 @@
-.section-default-config {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  margin: 2rem;
-  justify-content: center;
-}
-
-.section-default-config > *:not(:last-child) {
-  margin-bottom: 2rem;
-}
-
-.project-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.project__filter-container {
   text-align: center;
 }
 
-.project-container:not([open]) > summary {
-  margin-bottom: 0 !important;
+.project__filter-container:not([open]) > summary {
+  margin-bottom: 0;
 }
 
-.project-container[open] summary::after {
+.project__filter-container[open] summary::after {
   content: attr(data-open);
 }
 
-.project-container:not([open]) summary::after {
+.project__filter-container:not([open]) summary::after {
   content: attr(data-close);
 }
 
-.project-container > *:not(:last-child) {
+.project__filter-container > *:not(:last-child) {
   margin-bottom: 2rem;
+}
+
+.project__btn {
+  width: 200px;
+  padding: 1rem 0;
+  margin: 0 auto;
+  background-color: var(--color-green);
+  color: var(--color-white);
+}
+
+.project__filter-title {
+  text-transform: uppercase;
+}
+
+.project__filter {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project__filter__item {
+  width: 8rem;
+  padding: 1rem 0;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border: 1px ridge var(--color-black);
+  outline: 0;
 }
 
 .project-list {
@@ -42,49 +53,20 @@
   justify-content: center;
 }
 
-.project__filter-btn {
-  width: fit-content;
-  padding: 1rem;
-  background-color: #7F72F5;
-  margin: 0 auto;
-  color: #F7F7F7;
-}
-
-.project__filter-container {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.project__filter-item {
-  width: 10rem;
-  padding: 1rem 0;
-  background-color: #F7F7F7;
-  color: #333;
-  border: 1px solid #333;
-  outline: 0;
-}
-
-.project-item {
+.project-list__item {
   min-width: 300px;
   max-width: 400px;
   display: flex;
   flex-direction: column;
 }
 
-.project-item__image {
+.project-list__item__image {
   height: auto;
   width: 100%;
 }
 
-.project-item__image-text {
-  position: absolute;
-  bottom: 0;
-}
-
-.project-item__link {
+.project-list__item__link {
   padding: 1rem;
-  background-color: black;
-  color: gray;
+  background-color: var(--color-black);
+  color: var(--color-gray);
 }

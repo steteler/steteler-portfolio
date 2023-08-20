@@ -1,6 +1,8 @@
 :root {
-  --color-primary: #100C0C;
-  --color-secondary: #F7F7F7;
+  --color-black: #100C0C;
+  --color-white: #F7F7F7;
+  --color-gray: #D3D3D3;
+  --color-green: #72F587;
 }
 
 * {
@@ -18,32 +20,55 @@ main {
   overflow: hidden;
 }
 
-main > section {
+a, button, summary {
+  cursor: pointer;
+  user-select: none;
+}
+
+a {
+  color: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+}
+
+.home-section {
+  background-image: url("~/public/Home/background.svg");
+  background-color: var(--color-black);
+  background-size: cover;
+  background-position: center;
+}
+
+.section-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-main > section:nth-of-type(odd) svg > path {
-  fill: var(--color-primary);
+.section-container > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 2rem;
+  margin: 2rem 1rem;
 }
 
-main > section:nth-of-type(even) svg > path {
-  fill: var(--color-secondary);
+.section-container:nth-child(even) {
+  color: var(--color-white);
+  background-color: var(--color-black)
 }
 
-main > section:nth-child(even) {
-  color: var(--color-secondary);
-  background-color: var(--color-primary)
+.section-container:nth-child(odd) {
+  color: var(--color-black);
+  background-color: var(--color-white);
 }
 
-main > section:nth-child(odd):not(:first-child) {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
+.section-container:nth-of-type(odd) svg > path {
+  fill: var(--color-black);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-  cursor: pointer;
+.section-container:nth-of-type(even) svg > path {
+  fill: var(--color-white);
 }
