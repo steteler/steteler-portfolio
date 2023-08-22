@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Navbar from '@components/Navbar.jsx';
 import Divider from '@components/Divider.jsx';
 import About from '@components/Section/About.jsx';
 import Project from '@components/Section/Project.jsx';
@@ -11,8 +12,11 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>Steteler Portfolio</title>
+        <title>Portfólio Steteler</title>
       </Head>
+      <header>
+        <Navbar />
+      </header>
       <main>
         <div className="section-container home-section">
           <Home />
