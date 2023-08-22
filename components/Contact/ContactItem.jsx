@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 import styles from '@styles/Contact/ContactItem.module.css';
 
 export default function ContactItem({
@@ -10,8 +11,21 @@ export default function ContactItem({
   callBack,
   isOpen,
 }) {
+  const [wasCopied, setCopied] = useState(false);
+
+  function copyText(selectedText) {
+    navigator.clipboard.writeText(selectedText);
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 3000);
+  }
+
   return (
-    <button type="button" className={`${styles.contact__container} ${isOpen && styles.open}`}>
+    <button
+      type="button"
+      className={`${styles.contact__container} ${isOpen && styles.open}`}
+    >
       <Image
         className={styles.contact__image}
         src={src}
@@ -26,8 +40,12 @@ export default function ContactItem({
         href={link}
         target={link ? '_blank' : null}
         className={styles.contact__link}
+        onClick={() => copyText(text)}
       >
         {text}
+        <span className={`${styles.contact__copied} ${wasCopied && styles.show}`}>
+          Copiado ;)
+        </span>
       </Link>
     </button>
   );
