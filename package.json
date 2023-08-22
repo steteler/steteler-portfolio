@@ -6,7 +6,8 @@
     "dev": "next dev -p 7775",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx",
+    "stylelint": "npx stylelint '**/*.css'"
   },
   "dependencies": {
     "next": "13.4.13",
