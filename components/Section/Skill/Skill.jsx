@@ -4,41 +4,41 @@ import styles from '@styles/Section/Skill/Skill.module.css';
 
 export default function Skill() {
   const languages = [
-    { technology: 'javascript es6', link: '#', percentage: '80%' },
-    { technology: 'typescript', link: '#', percentage: '80%' },
-    { technology: 'python', link: '#', percentage: '80%' },
-    { technology: 'java', link: '#', percentage: '80%' },
-    { technology: 'c#', link: '#', percentage: '80%' },
-    { technology: 'c++', link: '#', percentage: '80%' },
+    { technology: 'javascript es6', link: '#project', percentage: '100%' },
+    { technology: 'typescript', link: '#project', percentage: '100%' },
+    { technology: 'python', link: '#project', percentage: '80%' },
+    { technology: 'java', link: '#project', percentage: '80%' },
+    { technology: 'c#', link: '#project', percentage: '80%' },
+    { technology: 'c++', link: '#project', percentage: '80%' },
   ];
 
   const databases = [
-    { technology: 'sql / nosql', link: '#', percentage: '80%' },
-    { technology: 'mysql', link: '#', percentage: '80%' },
-    { technology: 'mongodb', link: '#', percentage: '80%' },
+    { technology: 'sql / nosql', link: '#project', percentage: '100%' },
+    { technology: 'mysql', link: '#project', percentage: '100%' },
+    { technology: 'mongodb', link: '#project', percentage: '100%' },
   ];
 
   const frameworks = [
-    { technology: 'node.js', link: '#', percentage: '80%' },
-    { technology: 'react.js', link: '#', percentage: '80%' },
-    { technology: 'next.js', link: '#', percentage: '80%' },
-    { technology: 'express', link: '#', percentage: '80%' },
-    { technology: 'apis restful', link: '#', percentage: '80%' },
-    { technology: 'redux', link: '#', percentage: '80%' },
-    { technology: 'jwt', link: '#', percentage: '80%' },
-    { technology: 'jest', link: '#', percentage: '80%' },
-    { technology: 'rtl', link: '#', percentage: '80%' },
-    { technology: 'pytest', link: '#', percentage: '80%' },
+    { technology: 'node.js', link: '#project', percentage: '100%' },
+    { technology: 'react.js', link: '#project', percentage: '100%' },
+    { technology: 'next.js', link: '#project', percentage: '100%' },
+    { technology: 'express', link: '#project', percentage: '100%' },
+    { technology: 'apis restful', link: '#project', percentage: '100%' },
+    { technology: 'redux', link: '#project', percentage: '100%' },
+    { technology: 'jwt', link: '#project', percentage: '80%' },
+    { technology: 'jest', link: '#project', percentage: '100%' },
+    { technology: 'rtl', link: '#project', percentage: '100%' },
+    { technology: 'pytest', link: '#project', percentage: '100%' },
   ];
 
   const tools = [
-    { technology: 'figma', link: '#', percentage: '80%' },
-    { technology: 'trello', link: '#', percentage: '80%' },
-    { technology: 'docker', link: '#', percentage: '80%' },
-    { technology: 'docker compose', link: '#', percentage: '80%' },
+    { technology: 'figma', link: '#project', percentage: '100%' },
+    { technology: 'trello', link: '#project', percentage: '100%' },
+    { technology: 'docker', link: '#project', percentage: '100%' },
+    { technology: 'docker compose', link: '#project', percentage: '100%' },
   ];
   return (
-    <section id={styles.skill}>
+    <section className={styles.skill} id="skill">
       <Title text="habilidades" />
       <TechnologyContainer
         technologies={languages}

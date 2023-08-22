@@ -19,13 +19,13 @@
 }
 
 @media (768px <= width <= 1023px) {
-  #experience {
+  section.experience {
     width: 90%;
   }
 }
 
 @media (1023px <= width) {
-  #experience {
+  section.experience {
     width: 80%;
   }
 }

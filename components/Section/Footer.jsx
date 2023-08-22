@@ -3,7 +3,7 @@ import styles from '@styles/Section/Footer.module.css';
 
 export default function Footer() {
   return (
-    <section id={styles.footer}>
+    <section className={styles.footer} id="footer">
       <p className={styles.footer__text}>
         Feito com muito ☕
         <br />

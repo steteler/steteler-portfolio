@@ -72,13 +72,13 @@
 }
 
 @media (768px <= width <= 1023px) {
-  #project {
+  section.project {
     width: 90%;
   }
 }
 
 @media (1023px <= width) {
-  #project {
+  section.project {
     width: 80%;
   }
 }
