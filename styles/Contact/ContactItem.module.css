@@ -1,3 +1,32 @@
+.contact__container {
+  border: 0;
+  outline: 0;
+  color: var(--color-white);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.contact__container.open {
+  gap: 0.4rem;
+}
+
 .contact__image {
   border-radius: 0.4rem;
+}
+
+.contact__link {
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  width: 0;
+  height: 0;
+  text-transform: lowercase;
+  font-size: 14px;
+}
+
+.contact__container.open .contact__link {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  width: auto;
+  height: auto;
+  transition: clip-path 0.4s ease;
 }
