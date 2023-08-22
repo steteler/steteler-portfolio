@@ -3,7 +3,7 @@ import styles from '@styles/Section/About.module.css';
 
 export default function About() {
   return (
-    <section id={styles.about}>
+    <section className={styles.about} id="about">
       <Title text="sobre" />
       <p>
         Eu sou o João Victor Steteler, nasci em uma cidade pequena

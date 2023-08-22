@@ -6,7 +6,7 @@ import homeImage from '@public/Home/homeImage.svg';
 
 export default function Home() {
   return (
-    <section id={styles.home}>
+    <section className={styles.home} id="home">
       <div className={styles['home-info']}>
         <div className={styles['home-info__name-role']}>
           <p className={styles['home-info__name']}>
@@ -35,6 +35,7 @@ export default function Home() {
         height={480}
         className={styles.home__image}
         quality={100}
+        draggable={false}
         alt="imagem ilustrativa de um programador no computador"
       />
     </section>

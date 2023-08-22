@@ -1,11 +1,11 @@
 @media (768px <= width <= 1023px) {
-  #skill {
-    width: 90%;
+  section.skill {
+    width: 70%;
   }
 }
 
 @media (1023px <= width) {
-  #skill {
-    width: 80%;
+  section.skill {
+    width: 60%;
   }
 }

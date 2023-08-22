@@ -1,4 +1,4 @@
-#footer {
+.footer {
   margin: 0 2rem;
   max-width: 26rem;
 }
@@ -10,7 +10,7 @@
 
 .footer__text {
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .footer__text-warn {

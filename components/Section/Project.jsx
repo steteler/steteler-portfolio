@@ -6,7 +6,7 @@ import projectTemplate from '@public/project-template.png';
 
 export default function Project() {
   return (
-    <section id={styles.project}>
+    <section className={styles.project} id="project">
       <Title text="projetos" />
       <details className={styles['project__filter-container']}>
         <summary
@@ -46,6 +46,7 @@ export default function Project() {
             className={styles['project-list__item__image']}
             alt="Project1"
             quality={100}
+            draggable={false}
           />
           <Link href="#project" className={styles['project-list__item__link']}>link projeto</Link>
         </div>
@@ -56,6 +57,7 @@ export default function Project() {
             alt="Project1"
             priority="false"
             quality={100}
+            draggable={false}
           />
           <Link href="#project" className={styles['project-list__item__link']}>link projeto</Link>
         </div>
@@ -66,6 +68,7 @@ export default function Project() {
             alt="Project1"
             priority="false"
             quality={100}
+            draggable={false}
           />
           <Link href="#project" className={styles['project-list__item__link']}>link projeto</Link>
         </div>
@@ -76,6 +79,7 @@ export default function Project() {
             alt="Project1"
             priority="false"
             quality={100}
+            draggable={false}
           />
           <Link href="#project" className={styles['project-list__item__link']}>link projeto</Link>
         </div>
@@ -86,6 +90,7 @@ export default function Project() {
             alt="Project1"
             priority="false"
             quality={100}
+            draggable={false}
           />
           <Link href="#project" className={styles['project-list__item__link']}>link projeto</Link>
         </div>
