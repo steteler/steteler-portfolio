@@ -1,0 +1,88 @@
+.menu {
+  position: fixed;
+  width: 100%;
+  user-select: none;
+}
+
+.menu__icon {
+  border: 0;
+  display: flex;
+  background-color: transparent;
+  position: absolute;
+  width: 32px;
+  height: 24px;
+  right: 0;
+  top: 0;
+  margin: 1rem;
+  z-index: 99;
+}
+
+.menu__icon span {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: var(--color-gray);
+  border-radius: 4px;
+  transition: all 0.4s ease;
+}
+
+.menu__icon span:nth-child(1) {
+  top: 0;
+}
+
+.menu__icon span:nth-child(2){
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu__icon span:nth-child(3){
+  bottom: 0;
+}
+
+.menu.open > .menu__icon span {
+  background-color: dimgray;
+}
+
+.menu.open > .menu__icon span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu.open > .menu__icon span:first-child {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.menu.open > .menu__icon span:last-child {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+.menu__list {
+  position: absolute;
+  right: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  list-style: none;
+  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: dimgray;
+  font-weight: 600;
+  transition: all 0.4s ease;
+}
+
+.menu__list li:hover {
+  color: red;
+  transition: color 0.4s ease;
+}
+
+.menu.open > .menu__list {
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  background-color: var(--color-white);
+}
