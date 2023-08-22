@@ -5,7 +5,7 @@
   background-color: transparent;
   display: flex;
   align-items: center;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .contact__container.open {
@@ -22,11 +22,33 @@
   height: 0;
   text-transform: lowercase;
   font-size: 14px;
+  user-select: none;
+  position: relative;
 }
 
 .contact__container.open .contact__link {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: none;
   width: auto;
   height: auto;
   transition: clip-path 0.4s ease;
+}
+
+.contact__copied {
+  background-color: mediumslateblue;
+  position: absolute;
+  margin: auto;
+  width: fit-content;
+  padding: 0.4rem;
+  border-radius: 4px;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.contact__copied.show {
+  opacity: 1;
+  top: -40px;
+  transition: all 1s ease;
 }
