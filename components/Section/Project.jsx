@@ -18,25 +18,88 @@ export default function Project() {
         <div>
           <h4 className={styles['project__filter-title']}>linguagem</h4>
           <div className={styles.project__filter}>
-            <button type="button" className={styles.project__filter__item}>Opção de Filtro 1</button>
-            <button type="button" className={styles.project__filter__item}>Opção de Filtro 2</button>
-            <button type="button" className={styles.project__filter__item}>Opção de Filtro 3</button>
+            <button
+              aria-label="Filtrar linguagem por Opção de Filtro 1"
+              type="button"
+              className={styles.project__filter__item}
+            >
+              Opção de Filtro 1
+
+            </button>
+            <button
+              aria-label="Filtrar linguagem por Opção de Filtro 2"
+              type="button"
+              className={styles.project__filter__item}
+            >
+              Opção de Filtro 2
+
+            </button>
+            <button
+              aria-label="Filtrar linguagem por Opção de Filtro 3"
+              type="button"
+              className={styles.project__filter__item}
+            >
+              Opção de Filtro 3
+
+            </button>
           </div>
         </div>
         <div>
           <h4 className={styles['project__filter-title']}>banco de dados</h4>
           <div className={styles.project__filter}>
-            <button type="button" className={styles.project__filter__item}>Opção de Filtro 1</button>
-            <button type="button" className={styles.project__filter__item}>Opção de Filtro 2</button>
-            <button type="button" className={styles.project__filter__item}>Opção de Filtro 3</button>
+            <button
+              aria-label="Filtrar banco de dados por Opção de Filtro 1"
+              type="button"
+              className={styles.project__filter__item}
+            >
+              Opção de Filtro 1
+
+            </button>
+            <button
+              aria-label="Filtrar banco de dados por Opção de Filtro 2"
+              type="button"
+              className={styles.project__filter__item}
+            >
+              Opção de Filtro 2
+
+            </button>
+            <button
+              aria-label="Filtrar banco de dados por Opção de Filtro 3"
+              type="button"
+              className={styles.project__filter__item}
+            >
+              Opção de Filtro 3
+
+            </button>
           </div>
         </div>
         <div>
           <h4 className={styles['project__filter-title']}>ferramenta</h4>
           <div className={styles.project__filter}>
-            <button type="button" className={styles.project__filter__item}>Opção de Filtro 1</button>
-            <button type="button" className={styles.project__filter__item}>Opção de Filtro 2</button>
-            <button type="button" className={styles.project__filter__item}>Opção de Filtro 3</button>
+            <button
+              aria-label="Filtrar ferramenta por Opção de Filtro 1"
+              type="button"
+              className={styles.project__filter__item}
+            >
+              Opção de Filtro 1
+
+            </button>
+            <button
+              aria-label="Filtrar ferramenta por Opção de Filtro 2"
+              type="button"
+              className={styles.project__filter__item}
+            >
+              Opção de Filtro 2
+
+            </button>
+            <button
+              aria-label="Filtrar ferramenta por Opção de Filtro 3"
+              type="button"
+              className={styles.project__filter__item}
+            >
+              Opção de Filtro 3
+
+            </button>
           </div>
         </div>
       </details>

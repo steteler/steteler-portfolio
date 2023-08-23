@@ -23,6 +23,7 @@ export default function ContactItem({
 
   return (
     <button
+      aria-label="Abrir contato"
       type="button"
       className={`${styles.contact__container} ${isOpen && styles.open}`}
     >

@@ -14,7 +14,11 @@ export default function Navbar() {
   return (
     <header>
       <nav className={`${styles.menu} ${isOpen && styles.open}`} onClick={toggleOpen}>
-        <button type="button" className={styles.menu__icon}>
+        <button
+          aria-label="Abrir / Fechar menu"
+          type="button"
+          className={styles.menu__icon}
+        >
           <span />
           <span />
           <span />
