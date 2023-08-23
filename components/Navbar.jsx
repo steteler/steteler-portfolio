@@ -20,12 +20,12 @@ export default function Navbar() {
           <span />
         </button>
         <ul className={styles.menu__list}>
-          <Link href="#home"><li>Home</li></Link>
-          <Link href="#about"><li>Sobre</li></Link>
-          <Link href="#project"><li>Projetos</li></Link>
-          <Link href="#skill"><li>Habilidades</li></Link>
-          <Link href="#experience"><li>Experiências</li></Link>
-          <Link href="#footer"><li>Footer</li></Link>
+          <li><Link href="#home">Home</Link></li>
+          <li><Link href="#about">Sobre</Link></li>
+          <li><Link href="#project">Projetos</Link></li>
+          <li><Link href="#skill">Habilidades</Link></li>
+          <li><Link href="#experience">Experiências</Link></li>
+          <li><Link href="#footer">Footer</Link></li>
         </ul>
       </nav>
     </header>
