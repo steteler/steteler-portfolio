@@ -2,14 +2,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Title from '@components/Title.jsx';
 import styles from '@styles/Section/Project.module.css';
-import projectTemplate from '@public/project-template.png';
-import projectExample1 from '@public/Project/Project1.png';
+import projectReact from '@public/Project/ProjectReact.png';
+import projectJest from '@public/Project/ProjectJest.png';
 
 export default function Project() {
   return (
     <section className={styles.project} id="project">
       <Title text="projetos" />
-      <details className={styles['project__filter-container']}>
+      {/* <details className={styles['project__filter-container']}>
         <summary
           data-close="Mostrar Filtros"
           data-open="Esconder Filtros"
@@ -102,61 +102,61 @@ export default function Project() {
             </button>
           </div>
         </div>
-      </details>
+      </details> */}
       <section className={styles['project-list']}>
         <div className={styles['project-list__item']}>
           <Image
-            src={projectExample1}
+            src={projectReact}
             className={styles['project-list__item__image']}
-            alt="Project1"
+            alt="Projeto Recipes App"
             quality={100}
             draggable={false}
+            width={300}
+            height={180}
           />
-          <Link href="#project" className={styles['project-list__item__link']}>link projeto</Link>
+          <Link
+            target="_blank"
+            href="https://github.com/steteler/steteler-recipes-app"
+            className={styles['project-list__item__link']}
+          >
+            link projeto
+          </Link>
         </div>
         <div className={styles['project-list__item']}>
           <Image
-            src={projectTemplate}
+            src={projectReact}
             className={styles['project-list__item__image']}
-            alt="Project1"
-            priority="false"
+            alt="Projeto React Testing Library"
             quality={100}
             draggable={false}
+            width={300}
+            height={180}
           />
-          <Link href="#project" className={styles['project-list__item__link']}>link projeto</Link>
+          <Link
+            target="_blank"
+            href="https://github.com/steteler/steteler-react-testing-library"
+            className={styles['project-list__item__link']}
+          >
+            link projeto
+          </Link>
         </div>
         <div className={styles['project-list__item']}>
           <Image
-            src={projectTemplate}
+            src={projectJest}
             className={styles['project-list__item__image']}
-            alt="Project1"
-            priority="false"
+            alt="Projeto Jest"
             quality={100}
             draggable={false}
+            width={300}
+            height={180}
           />
-          <Link href="#project" className={styles['project-list__item__link']}>link projeto</Link>
-        </div>
-        <div className={styles['project-list__item']}>
-          <Image
-            src={projectTemplate}
-            className={styles['project-list__item__image']}
-            alt="Project1"
-            priority="false"
-            quality={100}
-            draggable={false}
-          />
-          <Link href="#project" className={styles['project-list__item__link']}>link projeto</Link>
-        </div>
-        <div className={styles['project-list__item']}>
-          <Image
-            src={projectTemplate}
-            className={styles['project-list__item__image']}
-            alt="Project1"
-            priority="false"
-            quality={100}
-            draggable={false}
-          />
-          <Link href="#project" className={styles['project-list__item__link']}>link projeto</Link>
+          <Link
+            target="_blank"
+            href="https://github.com/steteler/steteler-project-jest"
+            className={styles['project-list__item__link']}
+          >
+            link projeto
+          </Link>
         </div>
       </section>
     </section>

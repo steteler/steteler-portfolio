@@ -46,6 +46,10 @@
   outline: 0;
 }
 
+.project-list__item__image {
+  object-fit: cover;
+}
+
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -54,15 +58,8 @@
 }
 
 .project-list__item {
-  min-width: 240px;
-  max-width: 300px;
   display: flex;
   flex-direction: column;
-}
-
-.project-list__item__image {
-  height: auto;
-  width: 100%;
 }
 
 .project-list__item__link {
