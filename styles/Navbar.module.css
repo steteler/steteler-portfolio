@@ -2,6 +2,7 @@
   position: fixed;
   width: 100%;
   user-select: none;
+  z-index: 1;
 }
 
 .menu__icon {
@@ -9,8 +10,8 @@
   display: flex;
   background-color: transparent;
   position: absolute;
-  width: 32px;
-  height: 24px;
+  width: 24px;
+  height: 20px;
   right: 0;
   top: 0;
   margin: 1rem;
@@ -58,6 +59,7 @@
 }
 
 .menu__list {
+  display: flex;
   position: absolute;
   right: 0;
   width: 0;
@@ -65,7 +67,6 @@
   opacity: 0;
   list-style: none;
   gap: 3rem;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -73,6 +74,10 @@
   color: dimgray;
   font-weight: 600;
   transition: all 0.4s ease;
+}
+
+.menu__list > li {
+  display: none;
 }
 
 .menu__list li:hover {
@@ -85,4 +90,8 @@
   height: 100vh;
   opacity: 1;
   background-color: var(--color-white);
+}
+
+.menu.open li {
+  display: block;
 }
