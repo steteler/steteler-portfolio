@@ -37,17 +37,23 @@ export default function ContactItem({
         draggable={false}
         onClick={callBack}
       />
-      <Link
-        href={link}
-        target={link ? '_blank' : null}
-        className={styles.contact__link}
-        onClick={() => copyText(text)}
-      >
-        {text}
+      <div className={styles['contact__link-copied']}>
+        <Link
+          scroll={false}
+          href={link}
+          target={link ? '_blank' : null}
+          className={styles.contact__link}
+          onClick={() => copyText(text)}
+        >
+          {text}
+          <br />
+          <span className={styles.contact__text}>clique aqui para copiar</span>
+        </Link>
         <span className={`${styles.contact__copied} ${wasCopied && styles.show}`}>
           Copiado ;)
         </span>
-      </Link>
+      </div>
+
     </button>
   );
 }

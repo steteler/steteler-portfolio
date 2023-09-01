@@ -5,15 +5,20 @@
   background-color: transparent;
   display: flex;
   align-items: center;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .contact__container.open {
   gap: 0.4rem;
+  overflow: visible;
 }
 
 .contact__image {
   border-radius: 0.4rem;
+}
+
+.contact__link-copied {
+  position: relative;
 }
 
 .contact__link {
@@ -23,32 +28,39 @@
   text-transform: lowercase;
   font-size: 14px;
   user-select: none;
-  position: relative;
 }
 
 .contact__container.open .contact__link {
-  clip-path: none;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   width: auto;
   height: auto;
-  transition: clip-path 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.contact__text {
+  font-size: 10px;
+  color: gray;
 }
 
 .contact__copied {
-  background-color: mediumslateblue;
   position: absolute;
-  margin: auto;
-  width: fit-content;
-  padding: 0.4rem;
+  background-color: mediumslateblue;
   border-radius: 4px;
+  opacity: 0;
+  margin: auto;
   left: 0;
   right: 0;
-  top: 0;
-  opacity: 0;
-  transition: all 1s ease;
+  bottom: 0;
+  cursor: auto;
+  z-index: -1;
+  padding: 0.4rem 0.8rem;
+  width: fit-content;
+  transition: bottom 1s ease, opacity 1s ease, z-index 1s ease;
 }
 
 .contact__copied.show {
+  z-index: 1;
   opacity: 1;
-  top: -40px;
-  transition: all 1s ease;
+  bottom: -40px;
+  transition: bottom 1s ease, opacity 1s ease, z-index 1s ease;
 }
