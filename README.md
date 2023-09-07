@@ -15,5 +15,7 @@
 Referências:
 
 https://icons8.com/
+<br />
 https://www.svgrepo.com/
+<br />
 https://www.freepik.com/
