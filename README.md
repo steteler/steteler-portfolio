@@ -11,3 +11,9 @@
 - [x] - 100% - Habilidades ✅
 - [x] - 100% - Experiência ✅
 - [x] - 100% - Footer ✅
+
+Referências:
+
+https://icons8.com/
+https://www.svgrepo.com/
+https://www.freepik.com/
