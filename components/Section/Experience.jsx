@@ -9,9 +9,44 @@ export default function Experience() {
         <Title text="experiência" />
         <div className={styles['experience-content__container']}>
           <h3>
+            Estágio ~ Alberto Tech
+            <br />
+            (Fev 2020 Dez 2021)
+          </h3>
+          <p>
+            Alberto Tech é uma pequena empresa de tecnologia de projetos
+            freelance localizada na minha cidade
+          </p>
+          <ul className={styles['experience-content__list']}>
+            <li>
+              Desenvolvi sites utilizando Next.js, Material UI e outras
+              tecnologias modernas de front-end.
+            </li>
+            <li>
+              Programei back-ends para sites em Node.js com Express, implementando
+              funcionalidades de servidor como rotas, APIs e integrações com bancos de dados.
+            </li>
+            <li>
+              Trabalhei em equipe pequena e colaborativa, o que me permitiu aprender
+              boas práticas de desenvolvimento ágil e me comunicar de forma clara
+              com colegas e gestores.
+            </li>
+            <li>
+              Participei ativamente do levantamento de requisitos com os clientes, o que
+              aprimorou minha capacidade de entender necessidades de negócio e transformá-las
+              em soluções técnicas.
+            </li>
+            <li>
+              Absorvi conhecimentos valiosos em tecnologias web modernas e metodologias ágeis,
+              aumentando minhas habilidades técnicas e interpessoais
+            </li>
+          </ul>
+        </div>
+        <div className={styles['experience-content__container']}>
+          <h3>
             Autônomo
             <br />
-            (Abril, 2021 ~ Atualmente)
+            (Dez 2021 Atualmente)
           </h3>
           <p>
             Durante a minha carreira, tive a oportunidade de me
@@ -37,7 +72,7 @@ export default function Experience() {
           <h3 className={styles['experience-content__title']}>
             Trybe
             <br />
-            (Maio, 2022 ~ Maio, 2023)
+            (Mai, 2022 ~ Mai, 2023)
           </h3>
           <p>
             A Trybe é uma escola de tecnologia que oferece cursos práticos
@@ -78,7 +113,7 @@ export default function Experience() {
           <h3 className={styles['experience-content__title']}>
             Unifeb
             <br />
-            (Janeiro, 2019 ~ Janeiro, 2022)
+            (Jan, 2019 ~ Jan, 2022)
           </h3>
           <p>
             Concluí até o terceiro ano da graduação em Sistemas de
