@@ -11,7 +11,7 @@ export default function Experience() {
           <h3>
             Estágio ~ Alberto Tech
             <br />
-            (Fev 2020 Dez 2021)
+            (Fev 2020 ~ Dez 2021)
           </h3>
           <p>
             Alberto Tech é uma pequena empresa de tecnologia de projetos
@@ -46,7 +46,7 @@ export default function Experience() {
           <h3>
             Autônomo
             <br />
-            (Dez 2021 Atualmente)
+            (Dez 2021 ~ Atualmente)
           </h3>
           <p>
             Durante a minha carreira, tive a oportunidade de me
