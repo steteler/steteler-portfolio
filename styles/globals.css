@@ -1,8 +1,24 @@
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: var(--color-black);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 :root {
   --color-black: #100C0C;
   --color-white: #F7F7F7;
   --color-gray: #D3D3D3;
   --color-green: #72F587;
+  --color-purple: darkslateblue;
 }
 
 * {
@@ -18,6 +34,10 @@ html {
 html,
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+body {
+  overflow: overlay;
 }
 
 main {
