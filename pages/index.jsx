@@ -1,9 +1,10 @@
 import Head from 'next/head';
+import Feedback from '@components/Feedback.jsx';
 import Navbar from '@components/Navbar.jsx';
 import Divider from '@components/Divider.jsx';
 import About from '@components/Section/About.jsx';
 import Project from '@components/Section/Project.jsx';
-import Skill from '@components/Section/Skill/Skill.jsx';
+import Skill from '@components/Section/Skill/index.jsx';
 import Experience from '@components/Section/Experience.jsx';
 import Footer from '@components/Section/Footer.jsx';
 import Home from '@components/Section/Home.jsx';
@@ -14,9 +15,8 @@ export default function Index() {
       <Head>
         <title>Portfólio Steteler</title>
       </Head>
-      <header>
-        <Navbar />
-      </header>
+      <Navbar />
+      <Feedback />
       <main>
         <div className="section-container home-section">
           <Home />
