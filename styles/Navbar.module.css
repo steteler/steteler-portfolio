@@ -78,7 +78,7 @@
 }
 
 .menu__list li:hover {
-  color: red;
+  color: var(--color-purple);
   transition: color 0.4s ease;
 }
 
