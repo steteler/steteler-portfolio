@@ -11,7 +11,7 @@ export default function TechnologyItem({ technology = 'javascript', link = '#', 
           style={{ width: percentage }}
         />
       </div>
-      <Link href={link} className={styles['technology-container__link']}>ver projeto ➜</Link>
+      <Link href={link} target="_blank" className={styles['technology-container__link']}>ver projeto ➜</Link>
     </li>
   );
 }
