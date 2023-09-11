@@ -47,7 +47,7 @@ export default function ContactItem({
         >
           {text}
           <br />
-          <span className={styles.contact__text}>clique aqui para copiar</span>
+          <span className={styles.contact__text}>clique para copiar</span>
         </Link>
         <span className={`${styles.contact__copied} ${wasCopied && styles.show}`}>
           Copiado ;)
