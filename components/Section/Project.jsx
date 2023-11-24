@@ -1,9 +1,10 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import Title from '@components/Title.jsx';
-import styles from '@styles/Section/Project.module.css';
-import projectReact from '@public/Project/ProjectReact.png';
-import projectJest from '@public/Project/ProjectJest.png';
+import Image from "next/image";
+import Link from "next/link";
+import Title from "@components/Title.jsx";
+import styles from "@styles/Section/Project.module.css";
+import projectReact from "@public/Project/ProjectReact.png";
+import projectJest from "@public/Project/ProjectJest.png";
+import projectNode from "@public/Project/ProjectNode.png";
 
 export default function Project() {
   return (
@@ -103,11 +104,31 @@ export default function Project() {
           </div>
         </div>
       </details> */}
-      <section className={styles['project-list']}>
-        <div className={styles['project-list__item']}>
+      <section className={styles["project-list"]}>
+        <div className={styles["project-list__item"]}>
+          <Image
+            src={projectNode}
+            className={styles["project-list__item__image"]}
+            alt="Tablerise"
+            quality={100}
+            draggable={false}
+            width={300}
+            height={180}
+          />
+          <Link
+            target="_blank"
+            href="https://github.com/TableRise/tablerise-backend"
+            className={styles["project-list__item__link"]}
+          >
+            link projeto
+          </Link>
+        </div>
+      </section>
+      <section className={styles["project-list"]}>
+        <div className={styles["project-list__item"]}>
           <Image
             src={projectReact}
-            className={styles['project-list__item__image']}
+            className={styles["project-list__item__image"]}
             alt="Projeto Recipes App"
             quality={100}
             draggable={false}
@@ -117,15 +138,15 @@ export default function Project() {
           <Link
             target="_blank"
             href="https://github.com/steteler/steteler-recipes-app"
-            className={styles['project-list__item__link']}
+            className={styles["project-list__item__link"]}
           >
             link projeto
           </Link>
         </div>
-        <div className={styles['project-list__item']}>
+        <div className={styles["project-list__item"]}>
           <Image
             src={projectReact}
-            className={styles['project-list__item__image']}
+            className={styles["project-list__item__image"]}
             alt="Projeto React Testing Library"
             quality={100}
             draggable={false}
@@ -135,15 +156,15 @@ export default function Project() {
           <Link
             target="_blank"
             href="https://github.com/steteler/steteler-react-testing-library"
-            className={styles['project-list__item__link']}
+            className={styles["project-list__item__link"]}
           >
             link projeto
           </Link>
         </div>
-        <div className={styles['project-list__item']}>
+        <div className={styles["project-list__item"]}>
           <Image
             src={projectJest}
-            className={styles['project-list__item__image']}
+            className={styles["project-list__item__image"]}
             alt="Projeto Jest"
             quality={100}
             draggable={false}
@@ -153,7 +174,7 @@ export default function Project() {
           <Link
             target="_blank"
             href="https://github.com/steteler/steteler-project-jest"
-            className={styles['project-list__item__link']}
+            className={styles["project-list__item__link"]}
           >
             link projeto
           </Link>
