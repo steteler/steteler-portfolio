@@ -1,13 +1,13 @@
-import Link from "next/link";
-import Title from "@components/Title.jsx";
-import styles from "@styles/Section/Experience.module.css";
+import Link from 'next/link';
+import Title from '@components/Title.jsx';
+import styles from '@styles/Section/Experience.module.css';
 
 export default function Experience() {
   return (
     <section className={styles.experience} id="experience">
-      <div className={styles["experience-content"]}>
+      <div className={styles['experience-content']}>
         <Title text="experiência" />
-        <div className={styles["experience-content__container"]}>
+        <div className={styles['experience-content__container']}>
           <h3>
             Estágio ~ Alberto Tech
             <br />
@@ -17,7 +17,7 @@ export default function Experience() {
             Alberto Tech é uma pequena empresa de tecnologia de projetos
             freelance localizada na minha cidade
           </p>
-          <ul className={styles["experience-content__list"]}>
+          <ul className={styles['experience-content__list']}>
             <li>
               Desenvolvi sites utilizando Next.js, Material UI e outras
               tecnologias modernas de front-end.
@@ -44,7 +44,7 @@ export default function Experience() {
             </li>
           </ul>
         </div>
-        <div className={styles["experience-content__container"]}>
+        <div className={styles['experience-content__container']}>
           <h3>
             Autônomo
             <br />
@@ -62,15 +62,15 @@ export default function Experience() {
             realmente parte da empresa, só entrego os projetos que eles propõem
             e cumpro os prazos direitinho, mas não sou associado da empresa.
           </p>
-          <Link href="#project" className={styles["experience-content__link"]}>
+          <Link href="#project" className={styles['experience-content__link']}>
             projetos públicos ➜
           </Link>
         </div>
       </div>
-      <div className={styles["experience-content"]}>
+      <div className={styles['experience-content']}>
         <Title text="educação" />
-        <div className={styles["experience-content__container"]}>
-          <h3 className={styles["experience-content__title"]}>
+        <div className={styles['experience-content__container']}>
+          <h3 className={styles['experience-content__title']}>
             Trybe
             <br />
             (Mai, 2022 ~ Mai, 2023)
@@ -82,7 +82,7 @@ export default function Experience() {
             como profissionais completos na área de tecnologia. Os temas
             abordados incluem:
           </p>
-          <ul className={styles["experience-content__list"]}>
+          <ul className={styles['experience-content__list']}>
             <li>Introdução ao desenvolvimento de software</li>
             <li>Front-end</li>
             <li>Back-end</li>
@@ -92,7 +92,7 @@ export default function Experience() {
             <li>Habilidades comportamentais</li>
           </ul>
 
-          <ul className={styles["experience-content__list-link"]}>
+          <ul className={styles['experience-content__list-link']}>
             <li>
               <Link
                 target="_blank"
@@ -135,8 +135,8 @@ export default function Experience() {
             </li>
           </ul>
         </div>
-        <div className={styles["experience-content__container"]}>
-          <h3 className={styles["experience-content__title"]}>
+        <div className={styles['experience-content__container']}>
+          <h3 className={styles['experience-content__title']}>
             Unifeb
             <br />
             (Jan, 2019 ~ Jan, 2023)
@@ -146,7 +146,7 @@ export default function Experience() {
             Informação da UNIFEB de Barretos tem como foco capacitar os alunos
             na área de tecnologia da informação, abordando temas como:
           </p>
-          <ul className={styles["experience-content__list"]}>
+          <ul className={styles['experience-content__list']}>
             <li>Programação</li>
             <li>Redes de computadores</li>
             <li>Desenvolvimento de software</li>
