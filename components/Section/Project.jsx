@@ -117,7 +117,7 @@ export default function Project() {
           />
           <Link
             target="_blank"
-            href="https://github.com/TableRise/tablerise-backend"
+            href="https://github.com/TableRise"
             className={styles['project-list__item__link']}
           >
             link projeto
